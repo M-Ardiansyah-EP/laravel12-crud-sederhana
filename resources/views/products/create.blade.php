@@ -47,7 +47,7 @@
                             <label class="block text-sm font-semibold text-gray-700">Product Image</label>
                             <div class="relative">
                                 <input type="file" 
-                                       class="block w-full text-sm text-gray-500 file:mr-4 file:py-3 file:px-6 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-colors duration-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent @error('image') border-red-500 @enderror" 
+                                       class="block w-full text-sm text-gray-500 file:mr-4 file:py-3 file:px-6 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-colors duration-200 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent @error('image') border-red-500 @enderror" 
                                        name="image"
                                        accept="image/*">
                             </div>
@@ -62,7 +62,7 @@
                         <div class="space-y-2">
                             <label class="block text-sm font-semibold text-gray-700">Product Title</label>
                             <input type="text" 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('title') border-red-500 @enderror" 
+                                   class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('title') border-red-500 @enderror" 
                                    name="title" 
                                    value="{{ old('title') }}" 
                                    placeholder="Enter product title">
@@ -76,7 +76,7 @@
                         <!-- Description -->
                         <div class="space-y-2">
                             <label class="block text-sm font-semibold text-gray-700">Description</label>
-                            <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('description') border-red-500 @enderror" 
+                            <textarea class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('description') border-red-500 @enderror" 
                                       name="description" 
                                       rows="5" 
                                       placeholder="Enter product description">{{ old('description') }}</textarea>
@@ -97,7 +97,7 @@
                                         <span class="text-gray-500">Rp</span>
                                     </div>
                                     <input type="number" 
-                                           class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('price') border-red-500 @enderror" 
+                                           class="w-full pl-12 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('price') border-red-500 @enderror" 
                                            name="price" 
                                            value="{{ old('price') }}" 
                                            placeholder="0"
@@ -115,7 +115,7 @@
                             <div class="space-y-2">
                                 <label class="block text-sm font-semibold text-gray-700">Stock Quantity</label>
                                 <input type="number" 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('stock') border-red-500 @enderror" 
+                                       class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 @error('stock') border-red-500 @enderror" 
                                        name="stock" 
                                        value="{{ old('stock') }}" 
                                        placeholder="0"
@@ -139,7 +139,7 @@
                                 Reset Form
                             </button>
                             <a href="{{ route('products.index') }}" 
-                               class="flex-1 text-center bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200">
+                               class="flex-1 text-center bg-white border-2 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200">
                                 Cancel
                             </a>
                         </div>
